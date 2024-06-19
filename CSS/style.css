@@ -1,0 +1,74 @@
+  /*/////////////////////////////////     Edicion de video de fondo    ////////////////////////////////////////*/
+  video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 50%;
+    min-height: 50%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+.adj {
+    text-align: right;/*Alinea a la derecha el contenido elegido*/
+}
+.nada{
+    text-decoration: none;/* Quita el decorado por default del control s*/
+    color: black; /*Pone el texto de color negro*/
+}
+.nad{
+    text-decoration: none;/* Quita el decorado por default del control s*/
+    color: rgb(255, 255, 255); /*Pone el texto de color negro*/
+}
+.amp{
+    width: 100%;
+}
+table {
+    width: 100%; /* Ancho de la tabla ajustado */
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    background-color: transparent;
+}
+table, th, td {
+    border: none; /* Elimina todos los bordes de las celdas */
+    padding: 8px; /* Añade espacio interno a las celdas */
+    text-align: center; /* Centra el texto dentro de las celdas */
+    background-color: transparent;
+    color: rgb(243, 255, 254);
+    text-shadow: 4px 4px 8px rgb(0, 0, 0); 
+}
+th {
+    background-color: rgba(255, 255, 255, 0.39); /* Color de fondo para las celdas de encabezado */
+}
+.logo{
+    height: 80px;
+     margin-right: 10px;
+}
+.nombre{
+    text-shadow: 4px 4px 8px rgb(0, 0, 0); 
+    color: azure;
+}
+/*************************************boton***********************************************/
+.bt {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 8.5em;
+    height: 1.9em;
+    border: #ffffff 0.2em solid;
+    border-radius: 11px;
+    transition: all 0.6s ease;
+  }
+  
+  .bt:hover {
+    background-color: #000000;
+    cursor: pointer;
+  }
+.boton{
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    border-top: 1px azure solid;
+    border-left:  azure ;
+    border-right: black;
+}
+.fot{
+    color: orangered;
+}

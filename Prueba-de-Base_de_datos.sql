@@ -22,20 +22,21 @@ CREATE TABLE IF NOT EXISTS `precios` (
   `precio` decimal(10,2) NOT NULL,
   `fecha_creacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `imagen` varchar(255) DEFAULT NULL,
+  `genero` varchar(10) NOT NULL DEFAULT 'unisex',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla gestion_precios.precios: 8 rows
 /*!40000 ALTER TABLE `precios` DISABLE KEYS */;
-INSERT INTO `precios` (`id`, `descripcion`, `precio`, `fecha_creacion`, `imagen`) VALUES
-	(24, 'Tenis Nike Dunk High Up Black and Varsity Maize', 3399.00, '2017-07-04 14:00:00', ' ../imagenes/productoH.png'),
-	(23, 'Tenis de basquetbol para hombre Nike G.T. Jump 2', 4499.00, '2018-06-10 12:00:00', '../imagenes/productoG.png'),
-	(22, 'Nike Air Max 90. Tenis para hombre.', 2999.00, '2019-06-01 08:00:00', '../imagenes/productoF.png'),
-	(21, 'Nike Shox TL. Calzado para mujer.', 3699.00, '2020-05-25 16:20:00', '../imagenes/productoE.png'),
-	(20, 'Nike Air Max 90 Futura. Tenis para mujer.', 2777.60, '2021-04-10 11:45:00', '../imagenes/productoD.png'),
-	(19, 'Nike Air Max Excee. Tenis para hombre.', 2499.00, '2022-03-05 09:15:00', '../imagenes/productoC.png'),
-	(18, 'Nike Air Max 270. Tenis para hombre.', 3799.00, '2023-02-20 14:30:00', '../imagenes/productoB.png'),
-	(17, 'Nike Air Max 1 Premium. Tenis para mujer.', 3899.00, '2024-01-15 10:00:00', '../imagenes/productoA.png');
+INSERT INTO `precios` (`id`, `descripcion`, `precio`, `fecha_creacion`, `imagen`, `genero`) VALUES
+	(24, 'Tenis Nike Dunk High Up Black and Varsity Maize', 3399.00, '2017-07-04 14:00:00', ' ../imagenes/productoH.png', 'Unisex'),
+	(23, 'Tenis de basquetbol  Nike G.T. Jump 2', 4499.00, '2018-06-10 12:00:00', '../imagenes/productoG.png', 'Hombre'),
+	(22, 'Nike Air Max 90. ', 2999.00, '2019-06-01 08:00:00', '../imagenes/productoF.png', 'Hombre'),
+	(21, 'Nike Shox TL.', 3699.00, '2020-05-25 16:20:00', '../imagenes/productoE.png', 'Mujer'),
+	(20, 'Nike Air Max 90 Futura.', 2777.60, '2021-04-10 11:45:00', '../imagenes/productoD.png', 'Mujer'),
+	(19, 'Nike Air Max Excee.', 2499.00, '2022-03-05 09:15:00', '../imagenes/productoC.png', 'Hombre'),
+	(18, 'Nike Air Max 270. ', 3799.00, '2023-02-20 14:30:00', '../imagenes/productoB.png', 'Hombre'),
+	(17, 'Nike Air Max 1 Premium. ', 3899.00, '2024-01-15 10:00:00', '../imagenes/productoA.png', 'Mujer');
 /*!40000 ALTER TABLE `precios` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

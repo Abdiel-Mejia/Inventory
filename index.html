@@ -30,15 +30,24 @@
             <option value="fecha_asc" <?php if(isset($_GET['orden']) && $_GET['orden'] == 'fecha_asc') echo 'selected'; ?><strong>Antiguos</strong></option>
             <option value="fecha_desc" <?php if(isset($_GET['orden']) && $_GET['orden'] == 'fecha_desc') echo 'selected'; ?><strong>Nuevos</strong></option>
         </select>
+<!----------------------------------------Lista de caracteristicas----------------------------------------------------->
+        <label for="genero" class="nombre">Género:</label>
+            <select name="genero" id="genero" class="boton">
+                <option value="todos" ' . ($genero == 'todos' ? 'selected' : '') . '>Todos</option>
+                <option value="Hombre" ' . ($genero == 'Hombre' ? 'selected' : '') . '>Para caballero</option>
+                <option value="Mujer" ' . ($genero == 'Mujer' ? 'selected' : '') . '>Para dama</option>
+                <option value="Unisex" ' . ($genero == 'Unisex' ? 'selected' : '') . '>Unisex</option>
+            </select>
 <!----------------------------------------Boton de para filtrar----------------------------------------------------->
         <input class="bt"  type="submit" name="consultar" value="Buscar">
     </form>
 <!-----------------------------------------Tabla de visualización previa----------------------------------------->
-        <table>
+        <table style="width: 100%;">
             <tr>
 <!------------------------------------------Elementos de la tabla---------------------------------------------------->
                 <th>Imagen</th>
                 <th>Descripción</th>
+                <th>Genero</th>
                 <th>Precio</th>
                 <th>Fecha de Creación</th>
             </tr>
@@ -46,20 +55,23 @@
             <tr>
                 <td><img src="imagenes/productoA.png" alt="Producto A" class="img-producto"></td>
                 <td><strong> Nike Air Max 1 Premium. Tenis para mujer.</strong></td>
+                <td><strong>Mujer</strong></td>
                 <td><strong>$3899.00</strong></td>
                 <td><strong>2024-01-15 10:00:00</strong></td>
             </tr>
 <!------------------------------------------Segundo elemento de la tabla---------------------------------------------------->
             <tr>
                 <td><img src="imagenes/productoB.png" alt="Producto B" class="img-producto"></td>
-                <td><strong>Nike Air Max 270. Tenis para hombre.</strong></td>
+                <td><strong>Nike Air Max 270.</strong></td>
+                <td><strong>Hombre</strong></td>
                 <td><strong>$3799.00</strong></td>
                 <td><strong>2023-02-20 14:30:00</strong></td>
             </tr>
 <!------------------------------------------Tercer elemento de la tabla---------------------------------------------------->
             <tr>
                 <td><img src="imagenes/productoC.png" alt="Producto C" class="img-producto"></td>
-                <td><strong>Nike Air Max Excee. Tenis para hombre.</strong></td>
+                <td><strong>Nike Air Max Excee.</strong></td>
+                <td><strong>Hombre</strong></td>
                 <td><strong>$2499.00</strong></td>
                 <td><strong>2022-03-05 09:15:00</strong></td>
             </tr>
@@ -67,13 +79,15 @@
             <tr>
                 <td><img src="imagenes/productoD.png" alt="Producto D" class="img-producto"></td>
                 <td><strong>Nike Air Max 90 Futura. Tenis para mujer.</strong></td>
+                <td><strong>Mujer</strong></td>
                 <td><strong>$2777.60</strong></td>
                 <td><strong>2021-04-10 11:45:00</strong></td>
             </tr>
 <!------------------------------------------Quinto elemento de la tabla---------------------------------------------------->
             <tr>
                 <td><img src="imagenes/productoE.png" alt="Producto E" class="img-producto"></td>
-                <td><strong>Nike Shox TL. Calzado para mujer.</strong></td>
+                <td><strong>Nike Shox TL.</strong></td>
+                <td><strong>Mujer</strong></td>
                 <td><strong>$3699.00</strong></td>
                 <td><strong>2020-05-25 16:20:00</strong></td>
             </tr>
@@ -81,6 +95,7 @@
             <tr>
                 <td><img src="imagenes/productoF.png" alt="Producto F" class="img-producto"></td>
                 <td><strong>Nike Air Max 90. Tenis para hombre.</strong></td>
+                <td><strong>Hombre</strong></td>
                 <td><strong>$2999.00</strong></td>
                 <td><strong>2023-02-20 14:30:00</strong></td>
             </tr>
@@ -88,13 +103,15 @@
             <tr>
                 <td><img src="imagenes/productoG.png" alt="Producto G" class="img-producto"></td>
                 <td><strong>Nike Air Max 270. Tenis para hombre.</strong></td>
+                <td><strong>Hombre</strong></td>
                 <td><strong>$3799.00s</strong>/td>
                 <td><strong>2023-02-20 14:30:00</strong></td>
             </tr>
 <!------------------------------------------Octavo elemento de la tabla---------------------------------------------------->
             <tr>
                 <td><img src="imagenes/productoH.png" alt="Producto H" class="img-producto"></td>
-                <td><strong>Tenis de básquetbol para hombre Nike G.T. Jump 2</strong></td>
+                <td><strong>Tenis de básquetbol Nike G.T. Jump 2</strong></td>
+                <td><strong>Unisex</strong></td>
                 <td><strong>$3399.00</strong></td>
                 <td><strong>2018-06-10 12:00:00</strong></td>
             </tr>
@@ -104,7 +121,7 @@
             <footer>
                 <p class="fot"><strong>© 2024 Aceme Sneaker Outlet. Todos los derechos reservados</strong></p>
                 <p><strong class="fot" >Correo: </strong><a class="nad" href="mailto:zeus_ab@hotmail.com">zeus_ab@outlook.com</a>
-                | <strong class="fot">Perfil de </strong><a class="nad" href="politica_privacidad.html">Github</a> </p>
+                | <strong class="fot">Perfil de </strong><a class="nad" href="https://github.com/Abdiel-Mejia">Github</a> </p>
             </footer>
         </center>
         
